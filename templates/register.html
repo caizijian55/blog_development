@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="../static/CSS/register.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+        <audio autoplay>
+            <source src="http://s2.3lbh.com/s/87EJ97gi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Start Main Container -->
+        <div class="main-container">
+            <!-- Start Pokemon Ball Top Part -->
+            <div class="pokemon-top-part"></div>
+            <!-- End Pokemon Ball Top Part -->
+            <!-- Start Main Forms -->
+            <div class="main-forms">
+                <div class="signup-form">
+                    <form class="sign-back" method="POST" action="{{url_for('register')}}">
+                        <h1>sign UP</h1>
+                        <div class="signup-row">
+                            <i class="fa fa-user"></i>
+                            <input type="username" name = "username" placeholder="Username" autocomplete="nope">
+                        </div>
+                        <div class="signup-row">
+                            <i class="fa fa-password"></i>
+                            <input type="password" name = "password" placeholder="Password" >
+                        </div>
+                        <div class="signup-row">
+                            <i class="fa fa-checkps"></i>
+                            <input type="password" name="repassword"  placeholder="Check PASSWORD">
+                        </div>
+                        <div class="signup-row">
+                                <button class="fa fa-arrow-circle-o-right" aria-hidden="true"></button>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="remember">
+                                <a href="{{url_for('login')}}">Already Have Account ?</a>
+                            </div>
+                        </div>
+                    </form>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p> {{message}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+            <!-- End Main Forms -->
+            <!-- Start Pokemon Ball Bottom Part -->
+            <div class="pokemon-bottom-part">
+                <div class="white-part"></div>
+                <div class="black-line"></div>
+            </div>
+            <!-- End Pokemon Ball Bottom Part -->
+        </div>
+        <!-- End Main Container -->
+        <!-- Start Scripts -->
+        <script src="https://use.fontawesome.com/7dddae9ad9.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+        <!-- End Scripts -->
+    </body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script><script  src="../static/script/register.js"></script>
+
+</body>
+</html>
