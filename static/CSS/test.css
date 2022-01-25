@@ -1,0 +1,44 @@
+div.web-logo {
+    text-align: center;
+    background-color: #388d4a;
+}
+
+div.web-logo a{
+    text-decoration: none;
+    margin:0; 
+    padding:0
+}
+
+div.web-logo h1{
+    margin: 0;
+
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: #2e352c;
+    width: 100%;
+    overflow: auto; /* 如果导航栏选项多，允许滚动 */
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+ 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: #111;
+}

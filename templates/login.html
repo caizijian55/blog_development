@@ -10,7 +10,7 @@
 <!-- partial:index.partial.html -->
 <div class="login-form">
   <form class="login" method="POST" action="{{url_for('login')}}">
-    <h1>Login</h1>
+    <h1>登录</h1>
     <div class="content">
       <div class="input-field">
         <input type="username" name = "username" placeholder="Username" autocomplete="nope">
@@ -18,15 +18,18 @@
       <div class="input-field">
         <input type="password" name = "password" placeholder="Password" autocomplete="new-password">
       </div>
-      <a href="#" class="link">Forgot Your Password?</a>
+      <div class="input-field">
+        <input type="email" name = "email" placeholder="Email" autocomplete="Your Email">
+      </div>
+      <a href="{{url_for('send_email')}}" class="link">忘记密码?</a>
     </div>
     <div class="action">
-      <button>Sign in</button>
+      <button>完成</button>
     </div>
   </form>
   <div class="action2">
   <a href = "{{url_for('register')}}">
-    <button>Register</button>
+    <button>注册账号</button>
   </a>
   </div>
   <br>

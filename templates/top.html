@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500|Saira+Semi+Condensed:300,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/CSS/top.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <nav id="nav">
+      <div class="nav left">
+        <span class="gradient skew"><h1 class="logo un-skew"><a href="#home">Logo Here</a></h1></span>
+        <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+      </div>
+      <div class="nav right">
+        <a href="#a" class="nav-link active"><span class="nav-link-span"><span class="u-nav">主页</span></span></a>
+        <a href="#about" class="nav-link"><span class="nav-link-span"><span class="u-nav">关于</span></span></a>
+        <a href="#work" class="nav-link"><span class="nav-link-span"><span class="u-nav">博客</span></span></a>
+        <a href="#contact" class="nav-link"><span class="nav-link-span"><span class="u-nav">社区/问答</span></span></a>
+        {% if session.logged_in %}
+              <a href="{{ url_for('logout') }}" class="nav-link"><span class="nav-link-span"><span class="u-nav">退出账号</span></span></a>
+        {% endif %}
+      </div>
+    </nav>
+
+
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="../static/CSS/script.js"></script>
+
+
+</html>

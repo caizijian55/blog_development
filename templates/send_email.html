@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>reset ps</title>
+</head>
+
+
+<body>
+<h1>这里是修改密码的地方</h1>
+
+<form class="reset-password" method="POST" action="{{url_for('send_email')}}">
+    <div class="input-field">
+        <input type="email" name = "email" placeholder="Email" autocomplete="Your Email">
+    </div>
+    <div class="input-field">
+        <input type="username" name = "name" placeholder="Username">
+    </div>
+    <div class="action">
+        <button type="submit" class="btn btn-sm btn-info" name="email">发送</button>
+    </div>
+</form>
+
+{% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p> {{message}}</p>
+                {% endfor %}
+            {% endif %}
+{% endwith %}
+
+</body>
+
+</html>
+

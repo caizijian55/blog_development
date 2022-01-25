@@ -92,7 +92,7 @@ body {
 }
 
 .sign-back h1 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     color: #fff;
     margin-top: 0;

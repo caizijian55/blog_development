@@ -28,7 +28,7 @@
             <div class="main-forms">
                 <div class="signup-form">
                     <form class="sign-back" method="POST" action="{{url_for('register')}}">
-                        <h1>sign UP</h1>
+                        <h1>注册</h1>
                         <div class="signup-row">
                             <i class="fa fa-user"></i>
                             <input type="username" name = "username" placeholder="Username" autocomplete="nope">
@@ -42,11 +42,15 @@
                             <input type="password" name="repassword"  placeholder="Check PASSWORD">
                         </div>
                         <div class="signup-row">
+                            <i class="fa fa-checkps"></i>
+                            <input type="email" name="email"  placeholder="Email">
+                        </div>
+                        <div class="signup-row">
                                 <button class="fa fa-arrow-circle-o-right" aria-hidden="true"></button>
                         </div>
                         <div class="form-bottom">
                             <div class="remember">
-                                <a href="{{url_for('login')}}">Already Have Account ?</a>
+                                <a href="{{url_for('login')}}">已经拥有账户?</a>
                             </div>
                         </div>
                     </form>
